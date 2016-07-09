@@ -16,7 +16,7 @@
     </testsuites>
     <filter>
         <whitelist>
-            <directory>./src/Snowsoft</directory>
+            <directory>./src/Distilleries</directory>
         </whitelist>
     </filter>
     <logging>

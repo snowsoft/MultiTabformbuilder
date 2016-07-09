@@ -32,7 +32,7 @@ class FormBuilderServiceProvider extends \Distilleries\FormBuilder\FormBuilderSe
             return new \Kris\LaravelFormBuilder\FormBuilder($app, $app['laravel-form-helper']);
         });
 
-        $this->commands('Snowsoft\MultiTabformbuilder\Console\FormMakeCommand');
+        $this->commands('Snowsoft\MultiTabFormBuilder\Console\FormMakeCommand');
 
         $this->alias();
     }
@@ -126,32 +126,7 @@ class FormBuilderServiceProvider extends \Distilleries\FormBuilder\FormBuilderSe
 
         AliasLoader::getInstance()->alias(
             'FormBuilder',
-            'Snowsoft\MultiTabFormBuilder
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            \Facades\FormBuilder'
+            'Snowsoft\MultiTabFormBuilder\Facades\FormBuilder'
         );
         AliasLoader::getInstance()->alias(
             'Request',
