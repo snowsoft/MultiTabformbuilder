@@ -1,4 +1,4 @@
-<?php namespace Snowsoft\FormBuilder\Console;
+<?php namespace Snowsoft\MultiTabFormBuilder\Console;
 
 class FormMakeCommand extends \Kris\LaravelFormBuilder\Console\FormMakeCommand
 {
