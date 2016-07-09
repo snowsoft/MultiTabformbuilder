@@ -5,7 +5,7 @@ use Illuminate\Html\FormBuilder as LaravelForm;
 use Kris\LaravelFormBuilder\FormHelper;
 use Illuminate\Foundation\AliasLoader;
 
-class FormBuilderServiceProvider extends \Distilleries\FormBuilder\FormBuilderServiceProvider {
+class FormBuilderServiceProvider extends \Kris\LaravelFormBuilder\FormBuilderServiceProvider {
 
 
     /**
@@ -56,14 +56,14 @@ class FormBuilderServiceProvider extends \Distilleries\FormBuilder\FormBuilderSe
 
         parent::boot();
 
-        $this->loadViewsFrom(__DIR__.'/../../views', 'form-builder');
+        $this->loadViewsFrom(__DIR__.'/../../views', 'multi-tab-form-builder');
         $this->loadTranslationsFrom(__DIR__.'/../../lang', 'form-builder');
 
         $this->publishes([
             __DIR__.'/../../config/config.php' => config_path('form-builder.php')
         ]);
         $this->publishes([
-            __DIR__.'/../../views'             => base_path('resources/views/vendor/form-builder'),
+            __DIR__.'/../../views'             => base_path('resources/views/vendor/multi-tab-form-builder'),
         ], 'views');
 
 
