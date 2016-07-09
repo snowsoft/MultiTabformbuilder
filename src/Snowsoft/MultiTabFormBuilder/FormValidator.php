@@ -29,29 +29,7 @@ class FormValidator extends FormView {
      * @param bool $noOveride
      * @return $this
      */
-
-    public function column($forms)
-    {
-
-
-        
-
-        parent::column($forms);
-    }
-
-    public function tabs($forms)
-    {
-
-
-
-
-
-
-        parent::column($forms);
-    }
-
-
-
+ 
 
     public function add($name, $type = 'text', array $options = [], $modify = false, $noOveride = false)
     {
