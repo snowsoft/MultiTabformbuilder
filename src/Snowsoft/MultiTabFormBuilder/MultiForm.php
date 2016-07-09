@@ -22,6 +22,6 @@ class MultiForm extends  FormValidator
     {
 
 
-        return $tabs;
+        return $forms;
     }
 }
